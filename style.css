@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+
+/* ---- Topbar styles----  */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(11, 11, 60);
+}
+
+.left,
+.right {
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left {
+    flex: 5;
+}
+
+.right {
+    border-radius: 80px 0 0 25px;
+    background-color: blue;
+    flex: 1;
+}
+
+i {
+    color: rgb(66, 138, 167);
+    font-size: 18px;
+}
+
+.topbar span{
+    color: white;
+    font-size: 18px;
+    font-family: Nunito;
+}
+
+.right .social i {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+
+/* --- Navbar styles ---  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo i{
+    font-size: 45px;
+}
+.logo span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.links a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.btn button{
+    border: none;
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
