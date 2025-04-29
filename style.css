@@ -9,6 +9,7 @@
 /* ---- Topbar styles----  */
 
 .topbar {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(11, 11, 60);
@@ -38,7 +39,7 @@ i {
     font-size: 18px;
 }
 
-.topbar span{
+.topbar span {
     color: white;
     font-size: 18px;
     font-family: Nunito;
@@ -54,30 +55,36 @@ i {
 /* --- Navbar styles ---  */
 
 .navbar {
-    display: flex;
+    height:60px;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 100px;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.logo i{
+
+.logo i {
     font-size: 45px;
 }
-.logo span{
+
+.logo span {
     font-size: 30px;
     font-weight: 700;
 }
-.links a{
+
+.links a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: 600;
 }
-.btn button{
+
+.btn button {
     border: none;
     padding: 8px 12px;
     background-color: blue;
@@ -85,4 +92,37 @@ i {
     border-radius: 25px;
     font-size: 18px;
     font-weight: 700;
+}
+
+.links a{
+    position: relative;
+}
+.links a::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.712);
+    height: 4px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.links a:hover::after{
+    width: 100%;
+}
+
+
+/* ---- hero styles ----  */
+
+.hero{
+    /* 60+60+(25+25) */
+    height: calc(100vh - 170px);
+    /* background-image: url(hero_bg.jpg); */
+    background: 
+    linear-gradient(rgba(27, 27, 84, 0.581),
+    rgba(41, 41, 84, 0.584)),url(hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
 }
