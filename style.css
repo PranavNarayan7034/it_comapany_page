@@ -52,6 +52,29 @@ i {
 }
 
 
+@media screen and (max-width:1300px) {
+    .left,.right {
+        padding: 10px 50px;
+    }   
+}
+@media screen and (max-width:800px) {
+    .left,right {
+        padding: 10px 25px;
+    }
+    .topbar{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .left,.right {
+        padding: 10px;
+    }
+}
+
+
+
+
 /* --- Navbar styles ---  */
 
 .navbar {
